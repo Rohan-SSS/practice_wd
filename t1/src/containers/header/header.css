@@ -6,7 +6,7 @@
 .gpt3__header-content {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: top;
     align-items: flex-start;
     flex-direction: column;
 
@@ -20,13 +20,13 @@
     line-height: 75px;
     letter-spacing: -0.04em;
 }
-
-/* jugad bc */
+/* 
+jugad bc
 .gradient_text{
     background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 
 .gpt3__header-content p {
     font-family: var(--font-family);
@@ -116,7 +116,7 @@
 }
 
 .gpt3__header-image img {
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
