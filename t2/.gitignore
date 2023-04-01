@@ -1,2 +1,4 @@
+# dependencies
 /__pycache__
-/flask-env
+/flask_env
+
