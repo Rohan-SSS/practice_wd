@@ -1,0 +1,10 @@
+pandas
+pandas_ta
+ta
+numpy
+matplotlib
+requests
+tensorflow
+keras
+scikit-learn
+
