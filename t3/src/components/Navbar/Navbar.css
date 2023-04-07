@@ -2,8 +2,11 @@
     display: flex;
     justify-content: space-between;
 
+    top: 0;
+    width: 100%;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 1.2rem 4rem;
+
 }
 
 .ezm__navbar-links{
@@ -11,6 +14,12 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+
+.ezm__navbar-links a:hover{
+    font-weight: bold;
+    color: #a0a0a0;
+
 }
 
 .ezm__navbar-links_logo{
@@ -36,11 +45,12 @@
 .ezm__navbar-menu_container p{
     color: white;
     font-family: var(--font-family);
+    letter-spacing: 2px;
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
     text-transform: capitalize;
-
+    padding-right: 1rem;
     margin: 0 1rem;
     cursor: pointer;
 }
@@ -50,7 +60,7 @@
 
     display: none;
     position: relative;
-}
+} 
 
 .ezm__navbar-menu_container {
     display: flex;
@@ -74,36 +84,28 @@
     margin: 1rem 0;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1080px) {
+    
     .ezm__navbar-links_container {
         display: none;
     }
-
     .ezm__navbar-menu {
         display: flex;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
+
     .ezm__navbar {
         padding: 2rem 4rem;
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 480px) {
     .ezm__navbar {
         padding: 2rem;
     }
-
-    .ezm__navbar-sign {
-        display: none;
-    }
-
     .ezm__navbar-menu_container {
         top: 20px;
-    }
-
-    .ezm__navbar-menu_container-links-sign {
-        display: block;
     }
 }

@@ -21,7 +21,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className='ezm__navbar'>
+    <div className='ezm__navbar '>
 
       <div className='ezm__navbar-links'>
 

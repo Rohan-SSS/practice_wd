@@ -1,0 +1,41 @@
+.ezm__search {
+    display: flex;
+    justify-content: center;
+    margin: 0 25%;
+}
+
+.ezm__search input[type="text"] {
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #3c3c3c;
+    color: #fff;
+    font-family: var(--font-family);
+    box-shadow: 0 0 1px 2px #6c6c6c;
+    width: 100%;
+}
+
+.ezm__searchbar input[type="text"]:hover {
+    background-color: rgba(48, 48, 48, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+    .ezm__search {
+        margin: 0 10%;
+    }
+
+    .ezm__search input[type="text"] {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ezm__search {
+        margin: 0;
+    }
+
+    .ezm__search input[type="text"] {
+        width: 90%;
+    }
+}

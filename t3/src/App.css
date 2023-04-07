@@ -16,11 +16,7 @@ a {
     text-decoration: none;
 }
 
-/*  #BEF0CB   #6096B4  */
 
-.gradient__bg{
-    background:radial-gradient(circle at 3% 25%, #2c2c2c 0%, #202020 86%);
-}
 
 .gradient__text{
     background: var(--gradient-text);

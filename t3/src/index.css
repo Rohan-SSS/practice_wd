@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
-  --font-family: 'Manrope', sans-serif;
+  --font-family: 'Consolas', sans-serif;
 
   --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  /*  #BEF0CB   #6096B4  */
+  --gradient-bg: radial-gradient(circle at 3% 30%, #303030 0%, #202020 86%);
   
   --color-bg: #303030;
   --color-footer : #3a3a3a;
