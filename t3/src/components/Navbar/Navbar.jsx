@@ -7,9 +7,12 @@ import logo from '..//..//assets//logo.png'
 const Menu = () => (
   <>
   <p><a href='home'>Home</a></p>
+  <p><a href='analysis'>Analysis</a></p>
   <p><a href='model_specification'>Model Specification</a></p>
-  <p><a href='backtest'>Backtest</a></p>
   <p><a href='performance'>Performance</a></p>
+  <p><a href='backtest'>Backtest</a></p>
+  <p><a href='performance'>Links</a></p>
+
   </>
 )
 
