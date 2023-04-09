@@ -1,7 +1,10 @@
 import requests
 import csv
-from secrets import *
+import json
 import tempfile 
+
+from secrets import *
+
 def get_temp_csv(ticker):
     with tempfile.NamedTemporaryFile(mode='w', delete=False, suffix='.csv') as temp_file:
         url = f'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY_EXTENDED&symbol={ticker}&interval=30min&slice=year1month1&adjusted=false&apikey=UI6TB8RX6A5C76DS'
@@ -16,3 +19,15 @@ def get_temp_csv(ticker):
         temp_csv = temp_file.name
 
     return temp_csv
+
+def convert_csv_to_json(csv_path):
+    # Read data from the CSV file
+    with open(csv_path, mode='r') as csv_file:
+        reader = csv.DictReader(csv_file)
+        rows = list(reader)
+
+    # Convert the list of dictionaries to a JSON object
+    json_data = json.dumps(rows)
+
+    return json_data
+

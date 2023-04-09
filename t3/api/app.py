@@ -8,6 +8,7 @@ from predict import *
 from test import *
 
 app = Flask(__name__)
+
 @app.route('/')
 def works():
     return "it works"
@@ -19,3 +20,8 @@ def get_predictions():
     data = {'x': x.tolist(), 'y': y.tolist()}
     
     return str(data)
+
+# @app.route('/get_chart_json')
+# def get_chart_json():
+#     get_temp_csv()
+

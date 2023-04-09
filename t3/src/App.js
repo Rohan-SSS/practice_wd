@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Navbar, Chart, Search} from './components';
+import { Navbar, Chart} from './components';
 import { Footer, MarketData, CurrentPrediction, GeneralTrend, MACD, StocasticRSI, Strength, RPGraph} from './containers';
 
 import './App.css'
@@ -8,9 +8,9 @@ import './App.css'
 const App = () => {
   return (
     <div className='App'>
-      <div >
+      <div>
         <Navbar />
-        <Search />
+
       </div>
       <div>
         <Chart />
