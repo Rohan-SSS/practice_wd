@@ -11,9 +11,9 @@ import pandas_ta as ta
 from ta.volume import VolumeWeightedAveragePrice
 # -----------------------------------------------------------
 
-def get_preds():
+def get_preds(asset):
     # -----------------------------------------------------------
-    ticker = 'AAPL'
+    ticker = asset
 
     # using get_temp_csv tgo make a temp csv to get data and etc
     # get_temp_csv(ticker)

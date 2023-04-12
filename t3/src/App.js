@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Navbar, Chart} from './components';
-import { Footer, MarketData, CurrentPrediction, GeneralTrend, MACD, StocasticRSI, Strength, RPGraph} from './containers';
+import { Footer,  CurrentPrediction, GeneralTrend, MACD, StocasticRSI, Strength, RPGraph} from './containers';
 
 import './App.css'
 
@@ -10,11 +10,10 @@ const App = () => {
     <div className='App'>
       <div>
         <Navbar />
-
       </div>
       <div>
         <Chart />
-        <MarketData/>
+        {/* <MarketData/> */} 
       </div>
       <div>
         <CurrentPrediction />
