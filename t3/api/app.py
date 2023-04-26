@@ -18,22 +18,24 @@ def works():
 @app.route('/prediction')
 def get_predictions():
     symbol = request.args.get('symbol')
+    if symbol is None:
+        return jsonify({'error': 'No symbol provided'})
     x, y = get_preds(symbol)
-    # data = {'x': x.tolist(), 'y': y.tolist()}
-    # last_x = data['x'][-1][-1]
-    # last_y = data['y'][-1][-1]
     if x[-1] > 0.25:
         pct = (x[-1] * 100)
         pctc = 100 if pct > 100.00 else pct
-        return jsonify({'prediction': pctc})
+        return jsonify({'prediction': int(pctc)})
     elif x[-1] < -0.25:
         pct = (-(x[-1] * 100))
         pctc =  -100 if pct > 100.00 else pct
-        return jsonify({'prediction': pctc})
+        return jsonify({'prediction': int(pctc)})
     else:
         return "0"
-
 # @app.route('/get_chart_json')
 # def get_chart_json():
 #     get_temp_csv()
 
+
+if __name__ == '__main__':
+    app.debug = True
+    app.run()

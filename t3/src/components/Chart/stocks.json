@@ -1,0 +1,107 @@
+[
+    {
+        "company": "3M",
+        "symbol": "MMM"
+    },
+    {
+        "company": "Apple Inc.",
+        "symbol": "AAPL"
+    },
+    {
+        "company": "Amazon.com",
+        "symbol": "AMZN"
+    },
+    {
+        "company": "Alphabet Inc. Class A",
+        "symbol": "GOOGL"
+    },
+    {
+        "company": "Berkshire Hathaway Inc. Class B",
+        "symbol": "BRK.B"
+    },
+    {
+        "company": "Campbell Soup",
+        "symbol": "CPB"
+    },
+    {
+        "company": "Disney",
+        "symbol": "DIS"
+    },
+    {
+        "company": "Dow Chemical",
+        "symbol": "DOW"
+    },
+    {
+        "company": "Exxon Mobil",
+        "symbol": "XOM"
+    },
+    {
+        "company": "Ford",
+        "symbol": "F"
+    },
+    {
+        "company": "The Gap",
+        "symbol": "GPS"
+    },
+    {
+        "company": "General Mills",
+        "symbol": "GIS"
+    },
+    {
+        "company": "Hewlett Packard",
+        "symbol": "HPQ"
+    },
+    {
+        "company": "IBM",
+        "symbol": "IBM"
+    },
+    {
+        "company": "Johnson & Johnson",
+        "symbol": "JNJ"
+    },
+    {
+        "company": "Microsoft",
+        "symbol": "MSFT"
+    },
+    {
+        "company": "Monsanto",
+        "symbol": "MO"
+    },
+    {
+        "company": "NVIDIA Corporation",
+        "symbol": "NVDA"
+    },
+    {
+        "company": "PepsiCo",
+        "symbol": "PEP"
+    },
+    {
+        "company": "Starbucks",
+        "symbol": "SBUX"
+    },
+    {
+        "company": "Texas Instruments",
+        "symbol": "TXN"
+    },
+    {
+        "company": "Time Warner",
+        "symbol": "TWX"
+    },
+    {
+        "company": "United Health",
+
+        "symbol": "UNH"
+    },
+    {
+        "company": "Walmart",
+        "symbol": "WMT"
+    },
+    {
+        "company": "Whirlpool",
+        "symbol": "WHR"
+    },
+    {
+        "company": "Xerox",
+        "symbol": "XRX"
+    }
+]

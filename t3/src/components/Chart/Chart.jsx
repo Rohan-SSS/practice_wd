@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Chart.css';
 import './Search.css';
 
+var data = require("./stocks.json")
+
 let tvScriptLoadingPromise;
 
 export default function TradingViewWidget() {
@@ -81,20 +83,28 @@ export default function TradingViewWidget() {
 
   return (
     <div>
-      <div className='ezm__search'>
-        <input
-          type='text'
-          placeholder='Search for an asset...'
-          value={searchInput}
-          onChange={handleSymbolChange}
-          onMouseOver={(e) => {
-            e.target.style.backgroundColor = '#131722';
-          }}
-          onMouseOut={(e) => {
-            e.target.style.backgroundColor = '#171b26';
-          }}
-        />
-        <button onClick={handleSearchClick}>Search</button>
+      <div>
+        <div className='ezm__search'>
+          <input
+            type='text'
+            placeholder='Search for an asset...'
+            value={searchInput}
+            onChange={handleSymbolChange}
+            onMouseOver={(e) => {
+              e.target.style.backgroundColor = '#131722';
+            }}
+            onMouseOut={(e) => {
+              e.target.style.backgroundColor = '#171b26';
+            }}
+          />
+          <button onClick={handleSearchClick}>Search</button>
+        </div>
+        <div className='ezm__search-dropdown'>
+          {data.map((item) => (
+            <div className='ezm__search-dropdown-row'>
+              {item.company}
+            </div>))}
+        </div>
       </div>
       <div className='tradingview-widget-container'>
         <div id='tradingview_dee36' className='tradingview-widget-container-chart'></div>

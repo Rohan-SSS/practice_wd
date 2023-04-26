@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './CurrentPrediction.css';
-import '../../components/Chart/Chart'
+import Chart from '../../components/Chart/Chart';
 
 const CurrentPrediction = () => {
   const [prediction, setPrediction] = useState(null);
-  const [selectedSymbol, setSelectedSymbol] = useState('AAPL');
+  const [selectedSymbol, setSelectedSymbol] = useState('TSLA');
 
   useEffect(() => {
     fetch(`/prediction?symbol=${selectedSymbol}`)
@@ -15,8 +15,8 @@ const CurrentPrediction = () => {
       .catch(error => console.log(error));
   }, [selectedSymbol]);
 
-  const handleSymbolChange = (event) => {
-    setSelectedSymbol(event.target.value);
+  const handleSymbolChange = (symbol) => {
+    setSelectedSymbol(symbol);
   };
   
   return (
