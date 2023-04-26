@@ -36,6 +36,18 @@
     background-color: #2A2E39;
 }
 
+.ezm__search-dropdown{
+    background-color: ;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    margin: 0 30%;
+}
+
+.ezm__search-dropdown.empty{
+    border: none;
+}
+
 
 
 @media screen and (max-width: 768px) {
